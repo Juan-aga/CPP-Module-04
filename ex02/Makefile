@@ -27,7 +27,8 @@ F_SRC		=	main.cpp			\
 				Cat.cpp				\
 				Dog.cpp				\
 				WrongAnimal.cpp		\
-				WrongCat.cpp
+				WrongCat.cpp		\
+				Brain.cpp
 
 SRC			=	${addprefix $(SRC_DIR), $(F_SRC)}
 
@@ -35,11 +36,12 @@ OBJ			=	${patsubst $(SRC_DIR)%.cpp, $(OBJ_DIR)%.opp, $(SRC)}
 
 INCLUDES	=	-I./inc/
 
-HEADERS		=	inc/Animal.hpp	\
-				inc/Cat.hpp		\
-				inc/Dog.hpp		\
+HEADERS		=	inc/Animal.hpp		\
+				inc/Cat.hpp			\
+				inc/Dog.hpp			\
 				inc/WrongAnimal.hpp	\
-				inc/WrongCat.hpp
+				inc/WrongCat.hpp	\
+				inc/Brain.hpp
 
 ifdef DEBUG
 	DEBUG	=	1
