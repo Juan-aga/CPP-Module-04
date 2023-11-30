@@ -32,5 +32,7 @@ int main()
 	wa->makeSound();
 	wc->makeSound();
 
+	delete wa;
+	delete wc;
 	return 0;
 }
